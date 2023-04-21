@@ -1,18 +1,7 @@
 
-#from flask import Flask, render_template
-import pickle
-import os
 from flask import Flask, jsonify, make_response, request, redirect, render_template
-import cloudpickle
 from pathlib import Path
-import shutil
-import os
-import logging
 import sys
-
-from textblob import TextBlob
-from pprint import pprint
-#from sklearn.metrics import classification_report
 
 from transformers import AutoModelForSequenceClassification
 
